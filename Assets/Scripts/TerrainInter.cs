@@ -27,7 +27,7 @@ public class TerrainInter : MonoBehaviour
             Debug.Log(hit.point.x + "," + hit.point.y + "," + hit.point.z);
             float x = hit.point.x;
             float z = hit.point.z;
-            Vector3 pos = new Vector3(x, 0, z);
+            Vector3 pos = new Vector3(x, Terrain.activeTerrain.SampleHeight(new Vector3(x, 0, z)), z);
 
             switch (gameManagerScript.clickMode)
             {
