@@ -48,6 +48,8 @@ l Wind direction (slider 0-360 + some sort of visual indication in the scene (ar
 
 l Quit - quits the app
 
++++++++Proposed Solution
+
 In this Test I am spreading the fire in the direction of the wind and also in a certain radius. I have decided to split the burning process is three phases Ignition, Burning and Burned. Each phase time is different in each tree (random). Also the number of trees is randomly selected.
 
  All the inputs are being managed from the EvenSystem class, so the options that the user make are being set when the actual selection or button press is done. This may improve the performance a lot in case it was implemented by expecting the inputs changes in the Update method and ray casting.
